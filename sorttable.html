@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/Sortable.min.js"></script>
+    <title>Document</title>
+    <style>
+        .grid-square {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: #fff;
+            border: solid 1px rgb(0,0,0,0.2);
+            padding: 10px;
+            margin: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid" class="row">
+        <h4 class="col-12">Grid布局例子</h4>
+        <div id="gridDemo" class="col">
+            <div class="grid-square">Item 1</div>
+            <div class="grid-square">Item 2</div>
+            <div class="grid-square">Item 3</div>
+            <div class="grid-square">Item 4</div>
+            <div class="grid-square">Item 5</div>
+            <div class="grid-square">Item 6</div>
+            <div class="grid-square">Item 7</div>
+            <div class="grid-square">Item 8</div>
+            <div class="grid-square">Item 9</div>
+        </div>
+    </div>
+<script>
+        new Sortable(gridDemo, {
+                        swapThreshold: 1,
+                        animation: 150
+                    });
+            
+</script>
+</body>
+</html>
